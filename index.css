@@ -98,6 +98,10 @@ body {
   margin-right: 3px;
   color: rgba(255, 255, 255, 0.17);
 }
+.icon-image h3{
+  font-size: small; 
+  font-weight: bold;
+}
 
 .logo {
   vertical-align: middle;
