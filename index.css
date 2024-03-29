@@ -687,7 +687,7 @@ footer {
   transition: background 0.4s ease-in-out, height 0.2s linear;
   display: inline-block;
   cursor: pointer;
-  color: #172726;
+  color: #3a7975;
   width: 20%;
   height: 3em;
   border-top-left-radius: 3px;
@@ -702,7 +702,7 @@ footer {
 }
 
 .tabs label:hover {
-  background: #0a1615;
+  background: #77ccc5;
   color: #ffffff;
 }
 
@@ -737,7 +737,7 @@ footer {
 #tab2:checked+label,
 #tab3:checked+label,
 #tab4:checked+label {
-  background: #142120;
+  background: #08746d;
   justify-content: space-between;
   color: #FFFFFF;
 }
@@ -750,7 +750,7 @@ footer {
 
 .tab-content-wrapper {
   background: #FCFCFC;
-  border-top: #0a0c0c 5px solid;
+  border-top: #a8f2f2 5px solid;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -915,7 +915,6 @@ body {
 .iframe-container iframe {
   width: 100%;
   height: 100%;
-  /* Change to fill the container */
   position: absolute;
   top: 0;
   left: 0;
