@@ -1431,22 +1431,18 @@ header .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .button-container {
   position: fixed;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  display: flex;
-  align-items: center; /* Align button to the middle vertically */
-  z-index: 1000; /* Ensure the button is above other content */
-  margin-right: 1420px;
+  z-index: 1000;
 }
 
 /* Style for the rotated button */
 .left-button {
-  padding: 10px 20px;
-  background-color: #a18766; /* Blue color, you can change it */
+  padding: 8px 16px;
+  background-color: #a18766;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -1456,8 +1452,12 @@ header .wrapper {
   transform-origin: center;
 }
 
+/* Media query for smaller screens */
 @media (max-width: 768px) {
   .button-container {
-    margin-right:300px;
+    top: auto;
+    bottom: 10%; /* Adjust the position for smaller screens */
+    right: 5%;
+    transform: none;
   }
 }
