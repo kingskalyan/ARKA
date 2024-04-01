@@ -1477,3 +1477,24 @@ header .wrapper {
     background-color: var(--light-red);
   }
 }
+
+.arka-highlights {
+  text-align: center;
+}
+
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+}
+
+.highlight {
+  text-align: center;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .advantages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
