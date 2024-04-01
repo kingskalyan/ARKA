@@ -603,7 +603,7 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   bottom: 0;
 }
@@ -1492,12 +1492,75 @@ header .wrapper {
   text-align: center;
   padding: 20px;
 }
+
 @media screen and (max-width: 768px) {
   .advantages {
     grid-template-columns: repeat(2, 1fr);
   }
   #gallery{
-    margin-bottom: 200px;;
+    margin-bottom: 200px;
   }
 }
 
+.btn-whatsapp-pulse {
+	background: #25d366;
+	color: white;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
+}
+
+.btn-whatsapp-pulse-border {
+	bottom: 10px;
+	left: 20px;
+	animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid #25d366;
+	opacity: 0.75;
+	animation-name: pulse-border;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+	0% {
+		padding: 25px;
+		opacity: 0.75;
+	}
+	75% {
+		padding: 50px;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
