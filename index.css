@@ -1437,27 +1437,34 @@ header .wrapper {
   right: 0;
   transform: translateY(-50%);
   z-index: 1000;
+  margin-right:20px;
 }
 
-/* Style for the rotated button */
-.left-button {
-  padding: 8px 16px;
-  background-color: #a18766;
-  color: #fff;
+.right-button:hover{
+  background-color: var(--light-red);
+}
+
+.right-button {
+  padding: 10px 20px;
+  background-color: #a18766; /* Button background color */
+  color: #fff; /* Button text color */
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transform: rotate(-90deg);
-  transform-origin: center;
+  transform: rotate(-90deg) translateX(100%);
+  transform-origin: right center;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .button-container {
-    top: auto;
-    bottom: 10%; /* Adjust the position for smaller screens */
-    right: 5%;
-    transform: none;
+@media screen and (max-width: 768px) {
+  .right-button {
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: right bottom;
+    margin-right: 20px;
   }
+  
+.right-button:hover{
+  background-color: var(--light-red);
+}
 }
