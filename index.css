@@ -1496,5 +1496,8 @@ header .wrapper {
   .advantages {
     grid-template-columns: repeat(2, 1fr);
   }
+  #gallery{
+    margin-bottom: 200px;;
+  }
 }
 
